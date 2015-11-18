@@ -10,6 +10,8 @@ use mpcmf\system\io\log;
 $startTime = microtime(true);
 $rootFile = '.mpcmfroot';
 
+define(APP_NAME, 'mpcmf');
+
 $appRoot = null;
 $currentPath = __DIR__;
 while (($parentPath = dirname($currentPath)) !== $currentPath) {
@@ -46,7 +48,7 @@ $appName = basename($argv[1], '.php');
 unset($argv[1]);
 $argv = array_values($argv);
 $_SERVER['argv'] = $argv;
-$appFullClassPath = dirname(str_replace(APP_ROOT, 'mpcmf', $appPath)) . DIRECTORY_SEPARATOR . $appName;
+$appFullClassPath = dirname(str_replace(APP_ROOT, APP_NAME, $appPath)) . DIRECTORY_SEPARATOR . $appName;
 
 $appFullClass = str_replace(DIRECTORY_SEPARATOR, config::NAMESPACE_SEPARATOR, $appFullClassPath);
 
