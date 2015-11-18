@@ -10,7 +10,7 @@ use mpcmf\system\io\log;
 $startTime = microtime(true);
 $rootFile = '.mpcmfroot';
 
-define(APP_NAME, 'mpcmf');
+define('APP_NAME', 'mpcmf');
 
 $appRoot = null;
 $currentPath = __DIR__;
