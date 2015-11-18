@@ -70,8 +70,12 @@ class entity
         $output->writeln('<info>Please, select application:</info>');
         $applicationMenu = [];
         foreach (scandir(APP_ROOT . '/apps') as $appName) {
-            $appNamespace = APP_NAME . "\\apps\\" . $appName . "\\" . $appName;
-            if(!class_exists($appNamespace)) {
+            $appNamespace = APP_NAME . "\\apps\\" . $appName . "\\";
+
+            $appConsoleClass = $appNamespace . 'console';
+            $appWebApplication = $appNamespace . $appName;
+
+            if(!class_exists($appConsoleClass) && !class_exists($appWebApplication)) {
                 continue;
             }
             $applicationMenu[$appNamespace] = $appName;
