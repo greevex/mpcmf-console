@@ -1,0 +1,26 @@
+{
+    "name": "infostars/mpcmf-console",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gregory Ostrovsky",
+            "email": "greevex@gmail.com"
+        },
+        {
+            "name": "Dmitriy Emelyanov",
+            "email": "gilberg.vrn@gmail.com"
+        }
+    ],
+    "require": {
+        "greevex/mpcmf-core": "dev-master",
+        "wp-cli/php-cli-tools": "^0.10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "mpcmf\\apps\\mpcmf\\": "./apps/mpcmf/",
+            "mpcmf\\modules\\": "./apps/mpcmf/modules",
+            "mpcmf\\system\\": "./apps/mpcmf/system"
+        }
+    }
+}
