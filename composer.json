@@ -18,9 +18,9 @@
     },
     "autoload": {
         "psr-4": {
-            "mpcmf\\apps\\mpcmf\\": "./apps/mpcmf/",
-            "mpcmf\\modules\\": "./apps/mpcmf/modules",
-            "mpcmf\\system\\": "./apps/mpcmf/system"
+            "mpcmf\\apps\\mpcmfConsole\\": "src/apps/mpcmfConsole/",
+            "mpcmf\\modules\\": "src/apps/mpcmfConsole/modules",
+            "mpcmf\\system\\": ".src/apps/mpcmfConsole/system"
         }
     }
 }

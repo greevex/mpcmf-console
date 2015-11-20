@@ -1,9 +1,9 @@
 <?php
 
-namespace mpcmf\apps\mpcmf\commands\create;
+namespace mpcmf\apps\mpcmfConsole\commands\create;
 
-use mpcmf\apps\mpcmf\library\codeManager\entityManager\entityHolder;
-use mpcmf\apps\mpcmf\library\codeManager\entityManager\entityMapGenerator;
+use mpcmf\apps\mpcmfConsole\library\codeManager\entityManager\entityHolder;
+use mpcmf\apps\mpcmfConsole\library\codeManager\entityManager\entityMapGenerator;
 use mpcmf\system\application\applicationInstance;
 use mpcmf\system\application\consoleCommandBase;
 use mpcmf\system\application\webApplicationBase;

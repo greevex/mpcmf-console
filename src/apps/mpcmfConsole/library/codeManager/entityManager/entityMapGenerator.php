@@ -1,6 +1,6 @@
 <?php
 
-namespace mpcmf\apps\mpcmf\library\codeManager\entityManager;
+namespace mpcmf\apps\mpcmfConsole\library\codeManager\entityManager;
 
 use mpcmf\system\storage\mongoInstance;
 
