@@ -20,7 +20,7 @@
         "psr-4": {
             "mpcmf\\apps\\mpcmfConsole\\": "src/apps/mpcmfConsole/",
             "mpcmf\\modules\\": "src/apps/mpcmfConsole/modules",
-            "mpcmf\\system\\": ".src/apps/mpcmfConsole/system"
+            "mpcmf\\system\\": "src/apps/mpcmfConsole/system"
         }
     }
 }
