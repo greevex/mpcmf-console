@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "greevex/mpcmf-core": "dev-master",
+        "mpcmf/mpcmf-core": "dev-master",
         "wp-cli/php-cli-tools": "^0.10.4"
     },
     "autoload": {
