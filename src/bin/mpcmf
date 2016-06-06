@@ -28,8 +28,13 @@ if ($appRoot === null) {
 
 define('APP_ROOT', $appRoot);
 
-require_once APP_ROOT . '/vendor/autoload.php';
-require_once __DIR__ . '/../environment.php';
+$loader = APP_ROOT . '/loader.php';
+if (file_exists($loader)) {
+    require_once $loader;
+} else {
+    require_once APP_ROOT . '/vendor/autoload.php';
+    require_once __DIR__ . '/../environment.php';
+}
 
 if(!isset($argv[1]) || empty($argv[1])) {
     echo "=== Error! ===\nUsage: " . basename(__FILE__) . " apps/application/console.php\n\n";
