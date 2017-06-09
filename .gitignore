@@ -1,5 +1,4 @@
 .idea/
 vendor/
 .mpcmfroot
-composer.lock
 environment.local.php
