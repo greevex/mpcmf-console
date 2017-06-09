@@ -71,14 +71,13 @@ class entity
         $applicationMenu = [];
         foreach (scandir(APP_ROOT . '/apps') as $appName) {
             $appNamespace = APP_NAME . "\\apps\\" . $appName . "\\";
-
+            $appFullClass = $appNamespace . $appName;
             $appConsoleClass = $appNamespace . 'console';
-            $appWebApplication = $appNamespace . $appName;
 
-            if(!class_exists($appConsoleClass) && !class_exists($appWebApplication)) {
+            if(!class_exists($appConsoleClass) && !class_exists($appFullClass)) {
                 continue;
             }
-            $applicationMenu[$appNamespace] = $appName;
+            $applicationMenu[$appFullClass] = $appName;
         }
 
         /** @var webApplicationBase $baseAppClass */

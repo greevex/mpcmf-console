@@ -1,0 +1,4 @@
+#!/bin/bash
+self=`pwd`/$0
+bin=`dirname $self`
+$bin/mpcmf vendor/mpcmf/mpcmf-console/src/apps/mpcmfConsole/console.php $*
