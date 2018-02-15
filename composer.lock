@@ -4,9 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1194085a96430dd9dc9fc6444611321",
-    "content-hash": "aaa1d5180685180c30fe69a064a17e3d",
+    "content-hash": "6ffaceef630ff235cfe35df09d29bc83",
     "packages": [
+        {
+            "name": "alcaeus/mongo-php-adapter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alcaeus/mongo-php-adapter.git",
+                "reference": "45ba115e448c735cb0dbed5ebe857971aa4d43f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alcaeus/mongo-php-adapter/zipball/45ba115e448c735cb0dbed5ebe857971aa4d43f5",
+                "reference": "45ba115e448c735cb0dbed5ebe857971aa4d43f5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-mongodb": "^1.2.0",
+                "mongodb/mongodb": "^1.0.1",
+                "php": "^5.6 || ^7.0"
+            },
+            "provide": {
+                "ext-mongo": "1.6.14"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.0",
+                "squizlabs/php_codesniffer": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Mongo": "lib/Mongo"
+                },
+                "psr-4": {
+                    "Alcaeus\\MongoDbAdapter\\": "lib/Alcaeus/MongoDbAdapter"
+                },
+                "files": [
+                    "lib/Mongo/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "alcaeus",
+                    "email": "alcaeus@alcaeus.org"
+                },
+                {
+                    "name": "Olivier Lechevalier",
+                    "email": "olivier.lechevalier@gmail.com"
+                }
+            ],
+            "description": "Adapter to provide ext-mongo interface on top of mongo-php-libary",
+            "keywords": [
+                "database",
+                "mongodb"
+            ],
+            "time": "2018-01-24 18:55:13"
+        },
         {
             "name": "evenement/evenement",
             "version": "dev-master",
@@ -179,7 +243,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-11-03 01:34:55"
+            "time": "2015-11-03T01:34:55+00:00"
         },
         {
             "name": "infostars/net-curl",
@@ -268,7 +332,7 @@
                 "requests",
                 "spider"
             ],
-            "time": "2015-06-22 00:06:04"
+            "time": "2015-06-22T00:06:04+00:00"
         },
         {
             "name": "khr/react-curl",
@@ -308,6 +372,66 @@
                 "php"
             ],
             "time": "2015-05-06 08:11:51"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "v1.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "6bb17a734f1d9380b9999dbca282acce393d09a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/6bb17a734f1d9380b9999dbca282acce393d09a8",
+                "reference": "6bb17a734f1d9380b9999dbca282acce393d09a8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.3.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                },
+                {
+                    "name": "Hannes Magnusson",
+                    "email": "bjori@mongodb.com"
+                },
+                {
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2017-11-28 18:31:21"
         },
         {
             "name": "monolog/monolog",
@@ -388,6 +512,77 @@
             "time": "2015-11-18 18:03:10"
         },
         {
+            "name": "mpcmf/mpcmf-core",
+            "version": "dev-php7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpcmf/mpcmf-core.git",
+                "reference": "320f1552a183f3bf156947761a238eba3813b197"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpcmf/mpcmf-core/zipball/320f1552a183f3bf156947761a238eba3813b197",
+                "reference": "320f1552a183f3bf156947761a238eba3813b197",
+                "shasum": ""
+            },
+            "require": {
+                "alcaeus/mongo-php-adapter": "^1.1@dev",
+                "infostars/net-curl": "dev-master",
+                "khr/react-curl": "dev-master",
+                "monolog/monolog": "~1.12",
+                "php": ">=7.0.0",
+                "phpdocumentor/reflection-docblock": "~2.0",
+                "phpmailer/phpmailer": "dev-master",
+                "slim/slim": "2.*",
+                "smarty/smarty": "3.1.27",
+                "symfony/console": "~2.6",
+                "symfony/filesystem": "~2.6",
+                "wingu/code-generator": "1.0.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mpcmf\\system\\": "src/system/"
+                },
+                "files": [
+                    "src/loader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory Ostrovsky",
+                    "email": "greevex@gmail.com",
+                    "homepage": "https://github.com/greevex"
+                },
+                {
+                    "name": "Dmitry Emelyanov",
+                    "email": "gilberg.vrn@gmail.com",
+                    "homepage": "https://github.com/gilberg-vrn"
+                }
+            ],
+            "description": "Build fast and powerful console and web applications. Part of mpcmf solution.",
+            "keywords": [
+                "Applications",
+                "cache",
+                "console",
+                "mongodb",
+                "mvc",
+                "rabbitmq",
+                "react",
+                "slim",
+                "smarty",
+                "threads"
+            ],
+            "time": "2018-02-15 10:48:51"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
@@ -434,7 +629,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2015-02-03 12:10:50"
+            "time": "2015-02-03T12:10:50+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -633,7 +828,7 @@
             "keywords": [
                 "event-loop"
             ],
-            "time": "2014-02-26 17:36:58"
+            "time": "2014-02-26T17:36:58+00:00"
         },
         {
             "name": "react/http",
@@ -719,7 +914,7 @@
                 }
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2015-07-03 13:48:55"
+            "time": "2015-07-03T13:48:55+00:00"
         },
         {
             "name": "react/socket",
@@ -808,7 +1003,7 @@
                 "pipe",
                 "stream"
             ],
-            "time": "2015-10-07 18:32:58"
+            "time": "2015-10-07T18:32:58+00:00"
         },
         {
             "name": "slim/slim",
@@ -909,7 +1104,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-18 00:55:59"
+            "time": "2015-06-18T00:55:59+00:00"
         },
         {
             "name": "symfony/console",
@@ -1127,7 +1322,7 @@
                 "generator",
                 "php code generator"
             ],
-            "time": "2014-06-18 09:14:42"
+            "time": "2014-06-18T09:14:42+00:00"
         },
         {
             "name": "wingu/reflection",
@@ -1174,7 +1369,7 @@
                 "php reflection",
                 "reflection"
             ],
-            "time": "2015-03-19 16:20:21"
+            "time": "2015-03-19T16:20:21+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -1224,14 +1419,14 @@
                 "cli",
                 "console"
             ],
-            "time": "2015-08-10 12:46:19"
+            "time": "2015-08-10T12:46:19+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "greevex/mpcmf-core": 20
+        "mpcmf/mpcmf-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
