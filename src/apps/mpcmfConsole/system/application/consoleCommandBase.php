@@ -81,8 +81,10 @@ abstract class consoleCommandBase
 
         $phpdoc = new DocBlock($reflection);
 
+        $tags = $phpdoc->getTagsByName('consoleNs');
+
         /** @var DocBlock\Tag $tag */
-        $tag = reset($phpdoc->getTagsByName('consoleNs'));
+        $tag = reset($tags);
 
         $commandNameValues = [];
 
