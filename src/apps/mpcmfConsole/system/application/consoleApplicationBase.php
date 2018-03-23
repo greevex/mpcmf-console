@@ -2,6 +2,8 @@
 
 namespace mpcmf\system\application;
 
+use mpcmf\system\helper\service\signalHandler;
+
 /**
  * Description of application
  *
@@ -30,6 +32,8 @@ abstract class consoleApplicationBase
      */
     public function run()
     {
+        MPCMF_DEBUG && self::log()->addDebug('Console application bing signals...');
+        signalHandler::getInstance()->addHandler(SIGTERM, function($sig) {exit(128+$sig);});
         MPCMF_DEBUG && self::log()->addDebug('Console application starts...');
         $this->handle();
         MPCMF_DEBUG && self::log()->addDebug('Console application ends...');
