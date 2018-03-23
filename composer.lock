@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b1194085a96430dd9dc9fc6444611321",
-    "content-hash": "aaa1d5180685180c30fe69a064a17e3d",
+    "content-hash": "929382ef09127a9e946a8c7f35f0de87",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -179,7 +178,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-11-03 01:34:55"
+            "time": "2015-11-03T01:34:55+00:00"
         },
         {
             "name": "infostars/net-curl",
@@ -268,7 +267,7 @@
                 "requests",
                 "spider"
             ],
-            "time": "2015-06-22 00:06:04"
+            "time": "2015-06-22T00:06:04+00:00"
         },
         {
             "name": "khr/react-curl",
@@ -388,6 +387,155 @@
             "time": "2015-11-18 18:03:10"
         },
         {
+            "name": "mpcmf/mpcmf-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpcmf/mpcmf-core.git",
+                "reference": "a7f1cdb68590f11ddbbe88818852ea0a1f984b1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpcmf/mpcmf-core/zipball/a7f1cdb68590f11ddbbe88818852ea0a1f984b1b",
+                "reference": "a7f1cdb68590f11ddbbe88818852ea0a1f984b1b",
+                "shasum": ""
+            },
+            "require": {
+                "infostars/net-curl": "dev-master",
+                "khr/react-curl": "dev-master",
+                "monolog/monolog": "~1.12",
+                "mpcmf/mpcmf-signal-handler": "dev-master",
+                "nervetattoo/elasticsearch": "dev-master",
+                "php": ">=5.5.10",
+                "phpdocumentor/reflection-docblock": "~2.0",
+                "phpmailer/phpmailer": "dev-master",
+                "slim/slim": "2.*",
+                "smarty/smarty": "3.1.27",
+                "symfony/console": "~2.6",
+                "symfony/filesystem": "~2.6",
+                "wingu/code-generator": "1.0.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mpcmf\\system\\": "src/system/"
+                },
+                "files": [
+                    "src/loader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory Ostrovsky",
+                    "email": "greevex@gmail.com",
+                    "homepage": "https://github.com/greevex"
+                },
+                {
+                    "name": "Dmitry Emelyanov",
+                    "email": "gilberg.vrn@gmail.com",
+                    "homepage": "https://github.com/gilberg-vrn"
+                }
+            ],
+            "description": "Build fast and powerful console and web applications. Part of mpcmf solution.",
+            "keywords": [
+                "Applications",
+                "cache",
+                "console",
+                "mongodb",
+                "mvc",
+                "rabbitmq",
+                "react",
+                "slim",
+                "smarty",
+                "threads"
+            ],
+            "time": "2018-03-23 11:47:06"
+        },
+        {
+            "name": "mpcmf/mpcmf-signal-handler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpcmf/mpcmf-signalHandler.git",
+                "reference": "f95fa9650201940b17cb5ed99f4cf9dcc5957fb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpcmf/mpcmf-signalHandler/zipball/f95fa9650201940b17cb5ed99f4cf9dcc5957fb6",
+                "reference": "f95fa9650201940b17cb5ed99f4cf9dcc5957fb6",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "mpcmf\\system\\": "src/system"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitriy Emelyanov",
+                    "email": "gilberg.vrn@gmail.com"
+                }
+            ],
+            "time": "2018-03-23 11:19:18"
+        },
+        {
+            "name": "nervetattoo/elasticsearch",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nervetattoo/elasticsearch.git",
+                "reference": "668d029f2a16fc31722eeeabb048fc3d95fea7b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nervetattoo/elasticsearch/zipball/668d029f2a16fc31722eeeabb048fc3d95fea7b5",
+                "reference": "668d029f2a16fc31722eeeabb048fc3d95fea7b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "atoum/atoum": "^2.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ElasticSearch": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raymond Julin",
+                    "email": "raymond.julin@gmail.com",
+                    "homepage": "http://raymondjulin.com"
+                }
+            ],
+            "description": "ElasticSearch client for PHP 5.3",
+            "homepage": "http://github.com/nervetattoo/elasticsearch",
+            "keywords": [
+                "client",
+                "elasticsearch"
+            ],
+            "time": "2017-10-15 21:07:24"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
@@ -434,7 +582,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2015-02-03 12:10:50"
+            "time": "2015-02-03T12:10:50+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -633,7 +781,7 @@
             "keywords": [
                 "event-loop"
             ],
-            "time": "2014-02-26 17:36:58"
+            "time": "2014-02-26T17:36:58+00:00"
         },
         {
             "name": "react/http",
@@ -719,7 +867,7 @@
                 }
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2015-07-03 13:48:55"
+            "time": "2015-07-03T13:48:55+00:00"
         },
         {
             "name": "react/socket",
@@ -808,7 +956,7 @@
                 "pipe",
                 "stream"
             ],
-            "time": "2015-10-07 18:32:58"
+            "time": "2015-10-07T18:32:58+00:00"
         },
         {
             "name": "slim/slim",
@@ -909,7 +1057,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-18 00:55:59"
+            "time": "2015-06-18T00:55:59+00:00"
         },
         {
             "name": "symfony/console",
@@ -1127,7 +1275,7 @@
                 "generator",
                 "php code generator"
             ],
-            "time": "2014-06-18 09:14:42"
+            "time": "2014-06-18T09:14:42+00:00"
         },
         {
             "name": "wingu/reflection",
@@ -1174,7 +1322,7 @@
                 "php reflection",
                 "reflection"
             ],
-            "time": "2015-03-19 16:20:21"
+            "time": "2015-03-19T16:20:21+00:00"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -1224,14 +1372,14 @@
                 "cli",
                 "console"
             ],
-            "time": "2015-08-10 12:46:19"
+            "time": "2015-08-10T12:46:19+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "greevex/mpcmf-core": 20
+        "mpcmf/mpcmf-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
